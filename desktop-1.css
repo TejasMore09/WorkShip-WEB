@@ -1,0 +1,147 @@
+.desktop-1-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-gainsboro-100);
+  width: 1440px;
+  height: 87px;
+}
+.choose-a-service1,
+.consultancy-services1,
+.content-writer1,
+.digital-marketing1,
+.programming-tech3 {
+  position: absolute;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 141px;
+  height: 32px;
+  font-size: 19px;
+}
+.programming-tech3 {
+  top: 41px;
+  left: 1182px;
+  white-space: pre-wrap;
+}
+.content-writer1{
+  top: 37px;
+  left: 1374px;
+}
+.consultancy-services1{
+  top: 40px;
+  left: 1550px;
+}
+.digital-marketing1 {
+  top: 41px;
+  left: 1007px;
+}
+.choose-a-service1 {
+  top: 24px;
+  left: 123px;
+  font-size: 37px;
+  font-family: var(--font-righteous);
+  width: 284px;
+  height: 53px;
+}
+.desktop-1-item {
+  position: absolute;
+  top: 99px;
+  left: 350px;
+  background-color: var(--color-gainsboro-100);
+  width: 831px;
+  height: 235px;
+}
+.explore-the-niches1,
+.programming-tech4 {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.explore-the-niches1 {
+  top: 95px;
+  left: 582px;
+  font-size: 27px;
+  letter-spacing: 0.06em;
+  line-height: 43px;
+  width: 679px;
+  height: 180px;
+}
+.programming-tech4 {
+  top: 1006px;
+  left: 521px;
+  font-size: 34px;
+  line-height: 20px;
+  white-space: pre-wrap;
+  width: 402px;
+  height: 60px;
+}
+.prgrm-1-icon {
+  position: absolute;
+  top: 255px;
+  left: 560px;
+  background-color: rgb(182, 183, 183);
+  width: 731px;
+  height: 330px;
+  object-fit: cover;
+}
+.content-writer-11,
+.data-1-icon,
+.gr0aphic-des0ign-11 {
+  position: absolute;
+  top: 659px;
+  left: 140px;
+  width: 425px;
+  height: 330px;
+  object-fit: cover;
+}
+.content-writer-11,
+.data-1-icon {
+  left: 685px;
+  height: 330px;
+  width: 478px;
+}
+.content-writer-11 {
+  top: 659px;
+  left: 1290px;
+  width: 427px;
+  height: 330px;
+}
+.data-analysis,
+.graphic-design,
+.ui-ux {
+  position: absolute;
+  top: 599px;
+  font-size: 24px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 266px;
+  height: 58px;
+}
+.data-analysis{
+  background-color: rgb(182, 183, 183);
+  left: 790px;
+}
+.graphic-design {
+  background-color: rgb(182, 183, 183);
+  left: 220px;
+}
+.ui-ux {
+  left: 1349px;
+  background-color: rgb(182, 183, 183);
+}
+.desktop-1 {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  height: 1024px;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-base);
+  color: var(--color-black);
+  font-family: var(--font-rufina);
+}

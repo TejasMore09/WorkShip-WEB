@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
+  <title>Sign In</title>
+  <link rel="stylesheet" href="./global.css" />
+  <link rel="stylesheet" href="./sign-in.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jomolhari:wght@400&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ramabhadra:wght@400&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" />
+</head>
+<body>
+  <div class="sign-in1">
+    <div class="form">
+      <div class="container">
+        <div class="title">Sign In</div>
+        <div class="description">Fill in your details below</div>
+      </div>
+      <div class="list">
+        <div class="row">
+          <div class="selection"></div>
+        </div>
+        <div class="row">
+          <div class="input">
+            <div class="title1">Email</div>
+            <input type="email" id="email" class="textfield" placeholder="Enter your email" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="input">
+            <div class="title1">Password</div>
+            <input type="password" id="password" class="textfield" placeholder="Enter your password" />
+          </div>
+        </div>
+        <div class="button">
+          <div class="primary">
+            <!-- Change Submit text to button -->
+            <button type="button" onclick="signIn()" class="title3">Submit</button>
+          </div>
+        </div>
+        <div class="dont-have-an"><a href="sign-up.html">Don’t have an account? Sign Up!</a></div>
+      </div>
+      <img class="form-child" alt="" src="./public/vector-200.svg" />
+    </div>
+  </div>
+
+  <!-- JavaScript code to handle form submission -->
+  <script>
+    function signIn() {
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+
+      // Send a POST request to the backend
+      fetch('http://localhost:3000/login', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ username: email, password: password })
+      })
+      .then(response => {
+        if (response.ok) {
+          alert('Sign in successful!');
+        } else {
+          alert('Sign in failed!');
+        }
+      })
+      .catch(error => {
+        console.error('Error:', error);
+        alert('Sign in failed!');
+      });
+    }
+  </script>
+</body>
+</html>

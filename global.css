@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+    line-height: normal;
+  }
+  
+  :root {
+    /* fonts */
+    --font-jomolhari: Jomolhari;
+  
+    /* font sizes */
+    --font-size-xl: 20px;
+  
+    /* Colors */
+    --color-black: #000;
+  }

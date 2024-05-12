@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Review and Rating System</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .rating {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .stars input {
+        display: none;
+    }
+    .stars label {
+        font-size: 24px;
+        cursor: pointer;
+    }
+    .stars label:before {
+        content: '★';
+    }
+    .stars input:checked ~ label:before {
+        color: gold;
+    }
+</style>
+</head>
+<body>
+
+<div class="rating">
+    <h2>Rate this product:</h2>
+    <div class="stars">
+        <input type="radio" id="star5" name="rating" value="5">
+        <label for="star5">5 stars</label>
+        <input type="radio" id="star4" name="rating" value="4">
+        <label for="star4">4 stars</label>
+        <input type="radio" id="star3" name="rating" value="3">
+        <label for="star3">3 stars</label>
+        <input type="radio" id="star2" name="rating" value="2">
+        <label for="star2">2 stars</label>
+        <input type="radio" id="star1" name="rating" value="1">
+        <label for="star1">1 star</label>
+    </div>
+    <button onclick="submitRating()">Submit</button>
+</div>
+
+<script>
+    function submitRating() {
+        const selectedRating = document.querySelector('input[name="rating"]:checked');
+        if (selectedRating) {
+            alert(`You've rated ${selectedRating.value} stars. Thank you!`);
+        } else {
+            alert("Please select a rating before submitting.");
+        }
+    }
+</script>
+
+</body>
+</html>

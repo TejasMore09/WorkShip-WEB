@@ -1,0 +1,229 @@
+.desktop-3-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--color-gainsboro-100);
+    width: 1521px;
+    height: 79px;
+  }
+  .find-your-sailor {
+    position: absolute;
+    top: 31px;
+    left: 137px;
+    line-height: 48px;
+    font-weight: 500;
+    font-size: 34px;
+  }
+  .home {
+    left: 1104px;
+    display: inline-block;
+    width: 236px;
+    height: 45px;
+    font-size: 27px;
+  }
+  .about1,
+  .home,
+  .portfolio1 {
+    position: absolute;
+    top: 24px;
+    line-height: 48px;
+  }
+  .about1 {
+    left: 1292px;
+    display: inline-block;
+    width: 236px;
+    height: 45px;
+    font-size: 27px;
+  }
+  .portfolio1 {
+    left: 1480px;
+    font-size: 27px;
+  }
+  .desktop-3-item {
+    position: absolute;
+    top: 77px;
+    left: -11px;
+    background-color: var(--color-gray-300);
+    width: 1532px;
+    height: 178px;
+  }
+  .christine-dsouza {
+    position: absolute;
+    top: 118px;
+    left: 328px;
+    font-size: 27px;
+    line-height: 48px;
+  }
+  .passionate-graphic-designer {
+    position: absolute;
+    top: 177px;
+    left: 328px;
+    font-size: 20px;
+    line-height: 24px;
+    display: inline-block;
+    width: 874px;
+    height: 88px;
+  }
+  .desktop-3-inner {
+    position: absolute;
+    top: 159px;
+    left: 1163px;
+    border-radius: 14px;
+    background-color: var(--color-black);
+    width: 165px;
+    height: 58px;
+  }
+  .contact,
+  .title93 {
+    position: absolute;
+    line-height: 48px;
+  }
+  .contact {
+    top: 111px;
+    left: 1480px;
+    font-size: 25px;
+    color: var(--color-white);
+  }
+  .title93 {
+    top: 269px;
+    left: 697px;
+    display: inline-block;
+    text-align: center;
+    width: 520px;
+    font-size: 30px;
+  }
+  .rectangle-div {
+    position: absolute;
+    top: 111px;
+    left: 529px;
+    background-color: var(--color-gainsboro-100);
+    width: 161px;
+    height: 40px;
+  }
+  .webdeveloper {
+    position: absolute;
+    top: 111px;
+    left: 864px;
+    font-size: 24px;
+    line-height: 48px;
+  }
+  
+  .graphic-designer {
+    position: absolute;
+    top: 111px;
+    left: 1104px;
+    font-size: 24px;
+    line-height: 48px;
+  }
+  .subtitle18,
+  .title94 {
+    position: absolute;
+    top: 763px;
+    left: 407px;
+    font-size: 25px;
+    line-height: 24px;
+    display: inline-block;
+    width: 316px;
+  }
+  .subtitle18 {
+    top: 853px;
+    left: 407px;
+    font-size: var(--font-size-xl);
+    line-height: 28px;
+    font-weight: 500;
+  }
+  .graphic-design-11 {
+    position: absolute;
+    top: 368px;
+    left: 1202px;
+    width: 340px;
+    height: 336px;
+    object-fit: cover;
+  }
+  .title95 {
+    position: absolute;
+    width: calc(100% - 32px);
+    top: calc(50% - 8px);
+    left: 16px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 16px;
+  }
+  .text15 {
+    position: relative;
+    line-height: 16px;
+    font-weight: 500;
+    left: 879px;
+    font-size: 25px;
+  }
+  .tag7 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: var(--br-7xs) 0 var(--br-7xs) 0;
+    background-color: var(--color-gray-500);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--padding-9xs) var(--padding-5xs);
+    text-align: left;
+  }
+  .image19,
+  .webdev-1-icon1 {
+    position: absolute;
+    width: 340px;
+    height: 340px;
+  }
+  .webdev-1-icon1 {
+    top: 0;
+    left: 300px;
+    object-fit: cover;
+  }
+  .image19 {
+    top: 352px;
+    background-color: var(--color-gainsboro-200);
+    text-align: center;
+    font-size: var(--font-size-xs);
+  }
+  .title96 {
+    position: absolute;
+    top: 783px;
+    left: 1252px;
+    font-size: 25px;
+    line-height: 24px;
+    display: inline-block;
+    width: 316px;
+  }
+  .proffesional-prof-3 {
+    position: absolute;
+    top: 94px;
+    left: 107px;
+    width: 199px;
+    height: 171px;
+    object-fit: cover;
+  }
+  .subtitle19 {
+    position: absolute;
+    top: 853px;
+    left: 1252px;
+    font-size: var(--font-size-xl);
+    line-height: 28px;
+    font-weight: 500;
+    display: inline-block;
+    width: 316px;
+  }
+  .desktop-3 {
+    width: 100%;
+    position: relative;
+    background-color: rgb(187, 149, 194);
+    height: 1355px;
+    overflow: hidden;
+    text-align: left;
+    font-size: var(--font-size-21xl);
+    color: var(--color-black);
+    font-family: var(--font-roboto);
+  }
+  

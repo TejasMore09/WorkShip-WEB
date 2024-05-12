@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="./global.css" />
+  <link rel="stylesheet" href="./exploring-services.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jomolhari:wght@400&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ramabhadra:wght@400&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" />
+</head>
+<body>
+  <div class="exploring-services">
+    <div class="form1">
+      <div class="container1">
+        <div class="title4">Sign Up Form</div>
+        <div class="description1">Fill in your details below</div>
+      </div>
+      <div class="list1">
+        <div class="row3">
+          <div class="input2">
+            <div class="title5">Full Name</div>
+            <div class="textfield2">
+              <!-- Input field for full name -->
+              <input type="text" id="fullName" class="text2" placeholder="Enter your full name" />
+            </div>
+          </div>
+        </div>
+        <div class="row3">
+          <div class="selection1">
+            <div class="title5">Role</div>
+            <div class="chip-group">
+              <!-- Radio buttons for role selection -->
+              <div class="chip">
+                <input type="radio" id="service-provider" name="role" value="service-provider">
+                <label for="service-provider">Service Provider</label>
+              </div>
+              <div class="chip">
+                <input type="radio" id="service-seeker" name="role" value="service-seeker">
+                <label for="service-seeker">Service Seeker</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row3">
+          <div class="input2">
+            <div class="title5">Email</div>
+            <div class="textfield2">
+              <!-- Input field for email -->
+              <input type="email" id="email" class="text2" placeholder="Enter your email" />
+            </div>
+          </div>
+        </div>
+        <div class="row3">
+          <div class="input2">
+            <div class="title5">Password</div>
+            <div class="textfield2">
+              <!-- Input field for password -->
+              <input type="password" id="password" class="text2" placeholder="Enter your password" />
+            </div>
+          </div>
+        </div>
+        <div class="row3">
+          <div class="input2">
+            <div class="title5">Confirm Password</div>
+            <div class="textfield2">
+              <!-- Input field for confirming password -->
+              <input type="password" id="confirmPassword" class="text2" placeholder="Re-enter your password" />
+            </div>
+          </div>
+        </div>
+        <div class="button1">
+          <div class="primary1">
+            <!-- Submit button -->
+            <button type="button" onclick="signUp()" class="title10">Submit</button>
+          </div>
+        </div>
+      </div>
+      <!-- Background image -->
+      <img class="form-item" alt="" src="./public/vector-200.svg" />
+    </div>
+  </div>
+
+  <!-- JavaScript code to handle sign-up -->
+  <script>
+    function signUp() {
+      const fullName = document.getElementById('fullName').value;
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+      const confirmPassword = document.getElementById('confirmPassword').value;
+
+      // Validate if passwords match
+      if (password !== confirmPassword) {
+        alert('Passwords do not match!');
+        return;
+      }
+
+      // Determine selected role
+      const role = document.querySelector('input[name="role"]:checked');
+      const selectedRole = role ? role.value : '';
+
+      // Send a POST request to the backend
+      fetch('http://localhost:3000/signup', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ fullName, email, password, role: selectedRole })
+      })
+      .then(response => {
+        if (response.ok) {
+          alert('Sign up successful!');
+          window.location.href = 'sign-in.html'; // Redirect to sign-in page after successful sign-up
+        } else {
+          alert('Sign up failed!');
+        }
+      })
+      .catch(error => {
+        console.error('Error:', error);
+        alert('Sign up failed!');
+      });
+    }
+  </script>
+</body>
+</html>
